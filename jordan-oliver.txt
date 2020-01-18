@@ -13,35 +13,104 @@
     6. What do we put in the head of our HTML document? 
         The head holds meta data for our site
     7. What is an id? 
-        
+        An id is an atrribute added to tags for specifity, the same id can only be used once and carries 
+        the most weight when it comes to css executuion.
     8. What elements can I add an id to? 
+        Any HTML element...
     9. How many times can I use the same id on a page? 
+        Once
     10. What is a class? 
+        A class is an attribute, similar to an id, for specificity. 
     11. What elements can I add a class to? 
+        Any
     12. How many times can I use the same class on a page? 
+        As many times as you want, typically used for applying specificity to a group of elements you
+        want to style the same.
     13. How do I get my link to open in a new tab?
+        Add a "target="_blank"" attribute to the anchor tag
     14. What is the alt attribute used for? 
+        Added to image tags to display alternative info if the image is unable to be displayed
     15. How do I reference an id?
+        <p id="id-name"></p>
+        #id-name {
+
+        }
     16. What is the difference between a section and a div
+        div is a general block grouping tag while the section tag is typically used to describe a section of
+        HTML with similar content. a difference in readability/organization/specificity.
     17. What is CSS used for? 
+        CSS is used for styling your HTML for a beautiful webpage.
     18. How to we select an element? Example - every h2 on the page
+        h2 {
+
+        }
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        classes can be used multiple times and ids only once.
+        I'd use classes to style a body of <p>s the same, and an id on the <p> i wanted to style slightly 
+        different with more importance.
     20. How do we select classes in CSS?
+        .class-name{
+
+        }
     21. How do we select a p element with a single class of “human””?
+        p .human{
+
+        }
     22. What is a parent child selector? When would this be useful? 
+        Used to apply style to the parent element and passes some of the attributes to the child. Useful when 
+        you want to style a whole block similarly, but add specific styles to the child and not the parent.
     23. How do you select all links within a div with the class of sidebar?
+        div a .sidebar{
+
+        }
     24. What is a pseudo selector?
+        A keyword added to the CSS selector to define a special state of elements...
     25. What do we use the change the spacing between lines?
+        p {
+            line-height:  ;
+        }
     26. What do we use to change the spacing between letters?
+        p{
+            letter-spacing:  ;
+        }
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        p {
+            text-transform: uppercase;
+            text-transform: lowercase;
+            text-transform: capitalize
+        }
     28. How do I add a 1px border around my div that is dotted and black?
+        div {
+            border: 1px dotted #000000;
+        }
     29. How do I select everything on the page? 
+        Wild-Card selector: *{
+
+                            }
     30. How do I write a comment in CSS?
+        /* Add comment here*/
     31. How do I find out what file I am in, when I am using the command line? 
+        $ dir
     32. Using the command line - how do I see a list of files/folders in my current folder?
+        $ ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        $ rm <file-name> | be careful b/c there is no assurance prompt or undo option. gone means gone
     34. Why should I use version control? 
+        To collaborate. To track changes and have a fail safe if you are to break your code in a later
+        version and have to go back.
     35. How often should I commit to github?
+        After any objective change, commit w/ message tracking your steps to better follow your code.
     36. What is the command we would use to push our repo up to github? 
+        git push origin branch-name
     37. Walk me through Lambda's git flow. 
+        1.) Fork
+        2.) Add collaborator
+        3.) Clone project to the Lambda project folder: $ git clone project-location-url
+        4.) Create your own branch of the master: $ git checkout -b your-name
+        5.) Complete on your new project
+        6.) $ git status to see your tracked changes...
+        7.) Add changes to my branch: $ git add .
+        8.) Commit, describe changes made: $ git commit -m "Describe changes"
+        9.) Push changes to my branch: $ git push origin your-name
+        10.) Create pull request on Github
     */
